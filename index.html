@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+<meta name="theme-color" content="#07050a">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>Noctaria: The Last Keep</title>
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon-192.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="description" content="Noctaria: The Last Keep — tower defense roguelite de fantasia sombria.">
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<canvas id="menubg"></canvas>
+<canvas id="game" class="hidden"></canvas>
+<div id="hud" class="hidden">
+  <div id="top">
+    <div id="waveBox"><div class="wl"><b id="wN">ONDA 1</b><span id="wT">0:00</span></div><div class="bar wave"><i id="wBar"></i></div></div>
+    <div class="chip" id="enBox" title="Inimigos restantes"></div>
+    <div id="resBox"><span class="chip gold" id="goldN"></span><span class="chip ess" id="fragN"></span></div>
+    <button id="btnPause" class="ib" aria-label="Pausar"></button>
+  </div>
+  <div id="bossBar" class="hidden"><div class="bn" id="bossName"></div><div class="bar boss"><i id="bossHp"></i><u id="bossPh"></u></div></div>
+  <div id="hero">
+    <img id="hPortrait" alt="">
+    <div class="hi"><div class="hn"><b id="hName"></b><span id="lvl">Nv 1</span></div>
+      <div class="bar hp"><i id="hHp"></i><em id="hHpT"></em></div>
+      <div class="bar xp"><i id="hXp"></i></div>
+      <div class="bar core"><i id="cHp"></i><i id="cSh" class="sh"></i><em id="cT"></em></div></div>
+  </div>
+  <div id="actions"><button id="btnPot" class="act pot"></button><button id="btnSpec" class="act spec"><span class="cd" id="specCd"></span><span id="specT"></span></button><button id="btnEx" class="act exc"></button></div>
+  <div id="menubar"></div>
+  <div id="towerCard" class="hidden"></div>
+  <div id="hint" class="hidden"></div>
+  <div id="fps" class="hidden"></div>
+</div>
+<div id="banner" class="hidden"><b></b><span></span></div>
+<div id="panel" class="hidden"></div>
+<div id="ov" class="hidden"></div>
+<div id="scr" class="hidden"></div>
+<div id="toast" class="hidden"></div>
+<div id="loading"><div class="lg"><b>NOCTARIA</b><span>THE LAST KEEP</span><div class="bar"><i id="ldBar"></i></div><em id="ldTxt">Despertando as sombras…</em></div></div>
+<div id="rotate" class="hidden"></div>
+<script src="app.js"></script>
+</body>
+</html>
